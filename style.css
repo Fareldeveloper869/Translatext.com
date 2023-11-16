@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image:url('./rain.gif');
+  background-position: static;
+  background-size: static;
+  background-attachment: fixed;
+}
+.header{
+  position: fixed;
+  left: 0;
+  top: 0rem;
+  background-image:url('./rain.gif');
+  background-position: static;
+  background-size: static;
+  background-attachment: fixed;
+  width: 100%;
+  height: 55px;
+  box-shadow: 0 1px 0px black;
+  color: white;
+}
+.nav-header{
+  position: fixed;
+  top: 3em;
+  background-image:url('./rain.gif');
+  background-position: static;
+  background-size: static;
+  background-attachment: fixed;
+  left: 0rem;
+  width: 100%;
+  height: 33px;
+}
+.logo_txt{
+  background-color: rgba(0,0,0,0.688);
+  height: 57px;
+  font-family: sans-serif;
+}
+button{
+  background: rgba(0,0,0,0.688);
+}
+.brow{
+  position: fixed;
+  width: 100px;
+  height: 25px;
+  background: rgba(0,0,0,0.506);
+  background-position: static;
+  background-size: static;
+  background-attachment: fixed;
+  color: white;
+  border: none;
+  box-shadow: 0 1px 0px black;
+  font-family: serif;
+  cursor: pointer;
+  top: 3.5rem;
+  left: 0rem;
+}
+.about{
+  position: fixed;
+  left: 6.2rem;
+  width: 122px;
+  height: 25px;
+  background: rgba(0,0,0,0.506);
+  background-position: static;
+  background-size: static;
+  background-attachment: fixed;
+  color: white;
+  border: none;
+  box-shadow: 0 1px 0px black;
+  font-family: serif;
+  top: 3.5rem;
+  cursor: pointer;
+}
+.bug{
+  position: fixed;
+  right: 0rem;
+  width: 99px;
+  height: 25px;
+  background: rgba(0,0,0,0.506);
+  background-position: static;
+  background-size: static;
+  background-attachment: fixed;
+  color: white;
+  border: none;
+  box-shadow: 0 1px 0px black;
+  font-family: serif;
+  cursor: pointer;
+  top: 3.5rem;
+}
+.hidden {
+  display: none;
+}
+
+.board {
+  position: fixed;
+  top: 0vh;
+  left: 0vh;
+  width: 320px;
+  color: #fff;
+  background: #0000003b;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.screen{
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  background: #00000087;
+  width: 100%;
+  height: 100%;
+}
+.language{
+  position: relative;
+  margin-left: 3vh;
+  bottom: 3vh;
+}
+progress {
+  position: relative;
+  width: 80%;
+  height: 15px;
+  left: 0vh;
+  color: #3fb6b2;
+  background: #efefef;
+  border-radius: 1px;
+}
+
+progress::-webkit-progress-bar {
+  background: #efefef;
+  border-radius:10px;
+}
+
+progress::-webkit-progress-value {
+  background: #54e994;
+  box-shadow: 0 0 1px black;
+  border-radius:1px;
+}
+p{
+  font-family: serif;
+  font-size: 10px;
+  color: white;
+  position: relative;
+}
+h6{
+  font-size: 8px;
+}
+.icon-me{
+  border-radius: 5%;
+  box-shadow: 0 0 2px white;
+  width: 90px;
+  height: 90px;
+  position: relative;
+  margin-left: 2vh;
+}
+.whatsaap{
+  position: static;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  flex-direction: column;
+  cursor: pointer;
+  
+}
+.discord {
+  position: static;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.instagram{
+  position: static;
+  width:40px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.facebook{
+  position: static;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.social{
+  position: relative;
+  margin-left: 3vh;
+}
+h4{
+  position: relative;
+}
+.md{
+  position: relative;
+  margin-left: 2vh;
+  color: white;
+}
+h3{
+  color: white;
+  position: relative;
+}
+.account{
+  position: relative;
+  margin-left: 2vh;
+}
