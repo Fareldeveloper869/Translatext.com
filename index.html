@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <div class="screen"></div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dashboard</title>
+</head>
+<body>
+<center><h3>TRANSLATEXT</h3>
+<h6>BY FAREL DEVELOPER</h6></center>
+<div class="description">
+  <br>
+</head>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8481620530459499"
+     crossorigin="anonymous"></script>
+<!-- new ads 1 -->
+<body>
+  <div class="container">
+      <span class="txt-type" data-wait="5000" data-words='["changing the written word from one language to another. Starting from popular culture texts, to various important documents. In its work, Translated understands the context of the thing to be translated, Let‘s start."]'></span>
+    </h1>
+  </div>
+</div>
+<div class="terms"><input type="checkbox"></div><font class="policies">Terms and Policies from the Developer</font>
+<font class="copyright">©2023 By Far_project.s</font>
+<button onclick="window.location='home.html'">START</button>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+</body>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8481620530459499"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-8481620530459499"
+     data-ad-slot="5675852177"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</html>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.terms{
+  position: absolute;
+  bottom: 2.8rem;
+  color: white;
+  left: 4rem;
+}
+.policies{
+  position: absolute;
+  bottom: 3rem;
+  left: 5.5rem;
+  font-size: 8px;
+}
+body{
+  background-image:url('./star.gif');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.screen{
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  background: #0000004b;
+  width: 100%;
+  height: 100%;
+}
+.copyright{
+  color: white;
+  font-size: 6px;
+  position: absolute;
+  bottom: 1rem;
+  left: 8rem;
+}
+h3{
+  position: relative;
+  color: white;
+  top: 10rem;
+}
+h6{
+  color: yellow;
+  position: relative;
+  top: 10rem;
+  font-size: 8px;
+}
+font{
+  color: white;
+  font-size: 10px;
+}
+.description{
+  position: relative;
+  top: 11rem;
+}
+.container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Cursor */
+    .txt-type > .txt {
+      border-right: 0.2rem solid transparent;
+      font-size: 10px;
+    }
+
+  @media(min-width: 1200px) {
+      h1 {
+        font-size: 10px;
+      }
+    }
+
+    @media(max-width: 800px) {
+      .container {
+        padding: 0 1rem;
+      }
+
+      h1 {
+        font-size: 10px;
+      }
+    }
+
+    @media(max-width: 500px) {
+      h1 {
+        font-size: 10px;
+      }
+
+      h2 {
+        font-size: 10px;
+      }
+    }
+    button{
+      border: none;
+      width: 100px;
+      height: 25px;
+      color: white;
+      background: dodgerblue;
+      animation-name: slash;
+      animation-duration: 2s;
+      font-size: 10px;
+      border-radius: 2px;
+      position: absolute;
+      top: 20rem;
+      left: 7rem;
+      box-shadow: 0 0 8px dodgerblue;
+      font-family: Sans-Serif;
+    }
+    button:hover{
+      box-shadow: 0 0 10px dodgerblue;
+    }
+    @keyframes slash{
+    0%{
+      box-shadow: 0 0 0 transparent;
+      color: transparent;
+      background: transparent;
+      left: 0px;
+      }
+      15%{
+        background: black;
+        box-shadow: 0 0 3px black;
+        color: yellow;
+      }
+    }
+    </style>
+    <script>
+      class TypeWriter {
+      constructor(txtElement, words, wait = 5000) {
+        this.txtElement = txtElement;
+        this.words = words;
+        this.txt = '';
+        this.wordIndex = 0;
+        this.wait = parseInt(wait, 10);
+        this.type();
+        this.isDeleting = false;
+      }
+
+      type() {
+        // Current index of word
+        const current = this.wordIndex % this.words.length;
+        // Get full text of current word
+        const fullTxt = this.words[current];
+
+        // Check if deleting
+        if(this.isDeleting) {
+          // Remove char
+          this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+          // Add char
+          this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        // Insert txt into element
+        this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+
+        // change color for data-text
+        this.txtElement.innerHTML = `<span class="txt" style="color: white;">${this.txt}</span>`;
+
+        // Initial Type Speed
+        let typeSpeed = 100;
+
+        if(this.isDeleting) {
+          typeSpeed /= 2;
+        }
+        // If word is complete
+        if(!this.isDeleting && this.txt === fullTxt) {
+          // Make pause at end
+          typeSpeed = this.wait;
+          // Set delete to true
+          this.isDeleting = true;
+        } else if(this.isDeleting && this.txt === '') {
+          this.isDeleting = false;
+          // Move to next word
+          this.wordIndex++;
+          // Pause before start typing
+          typeSpeed = 300;
+        }
+
+        setTimeout(() => this.type(), typeSpeed);
+      }
+    }
+
+    // Init On DOM Load
+    document.addEventListener('DOMContentLoaded', init);
+
+    // Init App
+    function init() {
+      const txtElement = document.querySelector('.txt-type');
+      const words = JSON.parse(txtElement.getAttribute('data-words'));
+      const wait = txtElement.getAttribute('data-wait');
+      // Init TypeWriter
+      new TypeWriter(txtElement, words, wait);
+    }
+    </script>
